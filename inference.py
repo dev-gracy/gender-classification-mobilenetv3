@@ -3,7 +3,7 @@ from torchvision import transforms
 from PIL import Image
 
 # load model once
-model = torch.jit.load("model.pth", map_location="cpu")
+model = torch.jit.load("model/model.pth", map_location="cpu")
 model.eval()
 
 tf = transforms.Compose([
